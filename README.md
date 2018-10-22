@@ -1,7 +1,7 @@
 # PBLSistemasDigitais
 Projetos voltados ao desenvolvimento em FPGA
 
-Foi utilziado o Quartus 18.1
+-Foi utilziado o Quartus 18.1
 
 Passo para rodar o projeto:
 
@@ -29,3 +29,4 @@ Descarregar o NiosII na arquitetura do FPGA:
 Após abrir o quartus versão 18.1, é necessário abrir o projeto e clicar na opção de compilação. Após complilado, se deslocar para a opção "programmer" no campo superior onde está escrito "tools". Escolhe a opção USB-Blaster para envio do programa e pronto.
 
 Descarregar o programa C:
+Abra o programa Eclipse no campo "tools" do Quartus, clique com o segundo botão na pasta nios_1_bsp, depois opção nios->generate bsp. Depois de finalizado, compile o projeto clicando com o segundo botão na pasta nios_1, depois "build-project". Após o término de todo esse processo, clique em "Run" para rodar o programa completo na FPGA.
