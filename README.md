@@ -22,3 +22,10 @@ Passo para rodar o projeto:
 8 - Compilar
 
 9 - Ir na opção de rodar no hardware
+
+
+Descarregar o NiosII na arquitetura do FPGA:
+
+Após abrir o quartus versão 18.1, é necessário abrir o projeto e clicar na opção de compilação. Após complilado, se deslocar para a opção "programmer" no campo superior onde está escrito "tools". Escolhe a opção USB-Blaster para envio do programa e pronto.
+
+Descarregar o programa C:
