@@ -1,0 +1,180 @@
+/* 
+ * "Small Hello World" example. 
+ * 
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example 
+ * designs. It requires a STDOUT  device in your system's hardware. 
+ *
+ * The purpose of this example is to demonstrate the smallest possible Hello 
+ * World application, using the Nios II HAL library.  The memory footprint
+ * of this hosted application is ~332 bytes by default using the standard 
+ * reference design.  For a more fully featured Hello World application
+ * example, see the example titled "Hello World".
+ *
+ * The memory footprint of this example has been reduced by making the
+ * following changes to the normal "Hello World" example.
+ * Check in the Nios II Software Developers Manual for a more complete 
+ * description.
+ * 
+ * In the SW Application project (small_hello_world):
+ *
+ *  - In the C/C++ Build page
+ * 
+ *    - Set the Optimization Level to -Os
+ * 
+ * In System Library project (small_hello_world_syslib):
+ *  - In the C/C++ Build page
+ * 
+ *    - Set the Optimization Level to -Os
+ * 
+ *    - Define the preprocessor option ALT_NO_INSTRUCTION_EMULATION 
+ *      This removes software exception handling, which means that you cannot 
+ *      run code compiled for Nios II cpu with a hardware multiplier on a core 
+ *      without a the multiply unit. Check the Nios II Software Developers 
+ *      Manual for more details.
+ *
+ *  - In the System Library page:
+ *    - Set Periodic system timer and Timestamp timer to none
+ *      This prevents the automatic inclusion of the timer driver.
+ *
+ *    - Set Max file descriptors to 4
+ *      This reduces the size of the file handle pool.
+ *
+ *    - Check Main function does not exit
+ *    - Uncheck Clean exit (flush buffers)
+ *      This removes the unneeded call to exit when main returns, since it
+ *      won't.
+ *
+ *    - Check Don't use C++
+ *      This builds without the C++ support code.
+ *
+ *    - Check Small C library
+ *      This uses a reduced functionality C library, which lacks  
+ *      support for buffering, file IO, floating point and getch(), etc. 
+ *      Check the Nios II Software Developers Manual for a complete list.
+ *
+ *    - Check Reduced device drivers
+ *      This uses reduced functionality drivers if they're available. For the
+ *      standard design this means you get polled UART and JTAG UART drivers,
+ *      no support for the LCD driver and you lose the ability to program 
+ *      CFI compliant flash devices.
+ *
+ *    - Check Access device drivers directly
+ *      This bypasses the device file system to access device drivers directly.
+ *      This eliminates the space required for the device file system services.
+ *      It also provides a HAL version of libc services that access the drivers
+ *      directly, further reducing space. Only a limited number of libc
+ *      functions are available in this configuration.
+ *
+ *    - Use ALT versions of stdio routines:
+ *
+ *           Function                  Description
+ *        ===============  =====================================
+ *        alt_printf       Only supports %s, %x, and %c ( < 1 Kbyte)
+ *        alt_putstr       Smaller overhead than puts with direct drivers
+ *                         Note this function doesn't add a newline.
+ *        alt_putchar      Smaller overhead than putchar with direct drivers
+ *        alt_getchar      Smaller overhead than getchar with direct drivers
+ *
+ */
+
+#include "system.h"
+#include "sys/alt_stdio.h"
+#include "io.h"
+#include "altera_avalon_pio_regs.h"
+
+#define BUTTON_UP 13
+#define BUTTON_DOWN 14
+#define SELECT 11
+
+/**
+ *This function choose what led shall turn on.
+ */
+int point(int exp, int base){
+	int value = 1;
+	while(exp--){
+		value*=base;
+	}
+	return ~value;
+}
+void onLed(int count){
+	//IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,point(count,2));
+	switch(count){
+		case 0: IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,7);
+			break;
+		case 1: IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,11);
+			break;
+		case 2: IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,13);
+			break;
+		case 3: IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,14);
+			break;
+		//case 4: IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,15);
+	}
+}
+
+/*Function that represent a stop in the execution of the program*/
+void delay(int time){
+	unsigned int a = 0;
+	while(a < time){
+		a++;
+	}
+}
+
+/*
+ * oooo = 0
+ * 0001 = 1
+ * 0010 = 2
+ * 0100 = 4
+ * 1000 = 8
+ * */
+int main()
+{ 
+
+  int pushbutton = 0;
+  int count = 0;
+  /*
+   * Variable to check if shall come back to the menu.
+   * 1 to come back;
+   * 0 don't do nothing.
+   * */
+  int checkMessage;
+  /* Event loop never exits.*/
+  while (1){
+	  delay(30000);
+	  pushbutton = IORD(PUSHBUTTON_BASE,0);
+
+	  if(pushbutton == BUTTON_UP){//Up the option
+		  //IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,pushbutton);
+		  count++;
+		  alt_putstr(count);
+	  }else if(pushbutton == BUTTON_DOWN){//Down the option
+		  count--;
+		  alt_putstr(count);
+		  //IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,pushbutton);
+		  /*
+		  if(count == 4){count = -1;}//check if is the last option
+		  count++;
+		  onLed(count);
+		  //alt_printf("It is on the led: %d \n", count);
+		   */
+	  }else if(pushbutton ==  SELECT){
+		  IOWR_ALTERA_AVALON_PIO_DATA(LEDS_BASE,pushbutton);
+		  /*
+		  onLed(count);//write the signal on corresponding LED.
+		  //Call the function of show a message.
+		   *
+		   */
+	  }else if(pushbutton == 8 && checkMessage == 1){
+		  //Come back to menu
+	  }
+
+	  if(count == 4){
+		  count = 0;
+	  }else if(count < 0){
+		  count = 3;
+	  }
+	  onLed(count);
+
+  }
+	return 0;
+}

@@ -1,0 +1,1323 @@
+10:49:15 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 648 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+10:50:11 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+10:50:12 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+10:51:25 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 672 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+10:51:27 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+10:53:25 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 656 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+10:53:28 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+10:57:09 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 612 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+10:57:12 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+10:59:36 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:126:7: warning: unused variable 'count' [-Wunused-variable]
+   int count = 0;
+       ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 608 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+10:59:38 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+11:08:27 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+11:08:29 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:23:01 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:23:03 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:25:59 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 656 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:26:04 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:28:39 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 656 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:28:43 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:30:49 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 656 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:30:54 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:31:32 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 656 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:31:37 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:34:46 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:34:49 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:40:59 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 640 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:41:04 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:43:29 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 640 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:43:34 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:44:29 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 712 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:44:33 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:49:38 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 720 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:49:43 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:50:31 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 788 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:50:36 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:51:26 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 720 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:51:30 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:52:15 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 724 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:52:20 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:52:53 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:52:55 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:53:52 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 724 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:53:57 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+12:54:23 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 724 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+12:54:28 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:02:41 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 720 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:02:46 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:06:35 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 720 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:06:40 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:07:21 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 720 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:07:26 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:17:13 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 812 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:17:18 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:23:15 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:24:52 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+hello_world_small.c: In function 'main':
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c:149:16: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+     alt_putstr(count);
+                ^
+In file included from hello_world_small.c:82:0:
+../nios_1_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+hello_world_small.c:152:16: warning: passing argument 1 of 'alt_putstr' makes pointer from integer without a cast [-Wint-conversion]
+     alt_putstr(count);
+                ^
+In file included from hello_world_small.c:82:0:
+../nios_1_bsp//HAL/inc/sys/alt_stdio.h:55:5: note: expected 'const char *' but argument is of type 'int'
+ int alt_putstr(const char* str);
+     ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 964 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:24:57 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:26:02 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 812 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:26:07 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:26:33 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(3000000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(3000000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 812 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:26:37 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:27:16 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 812 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:27:21 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:30:31 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 884 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:30:36 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:31:13 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 884 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:31:18 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:31:52 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 884 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:31:57 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:32:30 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 888 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:32:35 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:33:17 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 892 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:33:21 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:34:41 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 860 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:34:46 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:35:15 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 864 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:35:21 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:35:47 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 888 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:35:51 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:36:27 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 892 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:36:32 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:49:56 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:50:18 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:52:35 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 888 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:52:40 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:53:30 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 892 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:53:34 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:57:11 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Command canceled
+13:57:27 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:57:30 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:58:01 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 888 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:58:06 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+13:58:56 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 892 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+13:59:01 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+14:08:29 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+make: *** Deleting file `nios_1.elf'
+Command canceled
+14:08:50 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 820 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+14:08:55 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+14:09:32 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 824 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+14:09:37 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+14:10:20 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 820 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+14:10:25 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+14:14:47 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 816 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+14:14:52 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+14:15:57 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 820 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+14:16:02 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+14:20:11 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 796 Bytes program size (code + initialized data).
+Info:              20 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+14:20:16 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]
+14:21:12 **** Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios_1_bsp//HAL/inc -I../nios_1_bsp/ -I../nios_1_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'onLed':
+hello_world_small.c:101:2: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+  delay(30000);
+  ^
+hello_world_small.c: At top level:
+hello_world_small.c:117:6: warning: conflicting types for 'delay'
+ void delay(int time){
+      ^
+hello_world_small.c:101:2: note: previous implicit declaration of 'delay' was here
+  delay(30000);
+  ^
+Info: Linking nios_1.elf
+nios2-elf-g++  -T'../nios_1_bsp//linker.x' -msys-crt0='../nios_1_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios_1_bsp/  -msmallc  -Wl,-Map=nios_1.map   -Os -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios_1.elf obj/default/hello_world_small.o -lm -msys-lib=m
+nios2-elf-insert nios_1.elf --thread_model hal --cpu_name nios2 --qsys true --simulation_enabled false --stderr_dev jtag --stdin_dev jtag --stdout_dev jtag --sopc_system_name nios --quartus_project_dir "C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus" --jdi ../..//output_files/niosII.jdi --sopcinfo C:/Users/lsjsa/Desktop/Trabalho/Codigo/Quartus/software/nios_1_bsp/../../nios.sopcinfo
+Info: (nios_1.elf) 820 Bytes program size (code + initialized data).
+Info:              19 KBytes free for stack + heap.
+Info: Creating nios_1.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios_1.elf >nios_1.objdump
+[nios_1 build complete]
+14:21:17 **** Incremental Build of configuration Nios II for project nios_1 ****
+make all 
+Info: Building ../nios_1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_1_bsp/
+[BSP build complete]
+[nios_1 build complete]

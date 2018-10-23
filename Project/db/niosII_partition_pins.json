@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_1_readdata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_3_writeresponsevalid_n",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_0_conduit_end_4_writeresponsevalid_n",
+					"strict" : false
+				},
+				{
+					"name" : "leds_external_connection_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_external_connection_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_external_connection_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds_external_connection_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "pushbutton_external_connection_export[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbutton_external_connection_export[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbutton_external_connection_export[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pushbutton_external_connection_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

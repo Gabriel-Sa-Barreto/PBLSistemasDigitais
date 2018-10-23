@@ -1,0 +1,12 @@
+module lcd(
+	input [31:0] dataA,
+	output [11:0] result
+);
+	wire [11:0] dataLcd = dataA[11:0];
+
+	wire [3:0] res_Rs_RW_E = dataLcd [11:8];
+	wire [11:4] data      = dataLcd [7:0];
+
+	assign result [11:8] = res_Rs_RW_E;
+	assign result [7:0]  = data;
+endmodule
