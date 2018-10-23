@@ -1,7 +1,7 @@
 # PBLSistemasDigitais
 Projetos voltados ao desenvolvimento em FPGA
 
-Está primeira parte está voltado ao desenvolvimento de uma IHM (Interface homem-máquina) utilizando periféricos como LCD, pushButtons e leds através do uso de uma FPGA e o processado Nios II disponibilizado pela Altera. A FPGA utilizada foi a cyclone IV.
+Está primeira parte está voltado ao desenvolvimento de uma IHM (Interface homem-máquina) utilizando periféricos como LCD, pushButtons e leds através do uso de uma FPGA e o processador Nios II disponibilizado pela Altera. A FPGA utilizada foi a cyclone IV.
 
 -Foi utilziado o Quartus 18.1
 
