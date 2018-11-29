@@ -5,6 +5,8 @@
 		.lcd_0_conduit_end_3_writeresponsevalid_n (<connected-to-lcd_0_conduit_end_3_writeresponsevalid_n>), //            lcd_0_conduit_end_3.writeresponsevalid_n
 		.lcd_0_conduit_end_4_writeresponsevalid_n (<connected-to-lcd_0_conduit_end_4_writeresponsevalid_n>), //            lcd_0_conduit_end_4.writeresponsevalid_n
 		.leds_external_connection_export          (<connected-to-leds_external_connection_export>),          //       leds_external_connection.export
-		.pushbutton_external_connection_export    (<connected-to-pushbutton_external_connection_export>)     // pushbutton_external_connection.export
+		.pushbutton_external_connection_export    (<connected-to-pushbutton_external_connection_export>),    // pushbutton_external_connection.export
+		.uart_0_external_connection_rxd           (<connected-to-uart_0_external_connection_rxd>),           //     uart_0_external_connection.rxd
+		.uart_0_external_connection_txd           (<connected-to-uart_0_external_connection_txd>)            //                               .txd
 	);
 

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6E22) Path("C:/Users/Gabriel/Desktop/CodeVerilog/Sistemas-Digitais/output_files/") File("niosII.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6E22) Path("C:/Users/Gabriel/Desktop/PBLSistemasDigitais/Project/output_files/") File("niosII.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

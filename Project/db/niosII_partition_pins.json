@@ -60,6 +60,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "uart_0_external_connection_txd",
+					"strict" : false
+				},
+				{
 					"name" : "clk_clk",
 					"strict" : false
 				},
@@ -77,6 +81,10 @@
 				},
 				{
 					"name" : "pushbutton_external_connection_export[3]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_0_external_connection_rxd",
 					"strict" : false
 				},
 				{

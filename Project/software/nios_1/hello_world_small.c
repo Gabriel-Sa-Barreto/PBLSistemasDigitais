@@ -79,16 +79,62 @@
  */
 
 #include "system.h"
+#include "stdio.h"
 #include "sys/alt_stdio.h"
 #include "io.h"
 #include "altera_avalon_pio_regs.h"
+#include "altera_avalon_uart_regs.h"
 #include <unistd.h>
 #include <string.h>
-// Last Up = 13
-//Last Down = 14
+
+
 #define BUTTON_UP 11
 #define BUTTON_DOWN 7
 #define SELECT 13
+#define UART_0_BASE 0x11020
+
+//----------------------VETORES DOS PACOTES E COMANDOS-------------------------------
+
+//pacote connect 0x\10\11\00\04\MQTT\04\02\00\14\00\04\Nios
+char connect[] = {0x10 ,0x12 ,0x00, 0x04 ,0x4d ,0x51, 0x54, 0x54, 0x04 ,0x02 ,0x00 ,0x14, 0x00 ,0x06, 0x4e, 0x69, 0x6f, 0x73, 0x20, 0x32};
+char comandoSendC[] = "AT+CIPSEND=20";
+
+
+
+
+
+//pacote disconnect
+char disconnect[] = {0xe0 , 0x00};
+char comandoD[] = "AT+CIPSEND=2";
+
+
+//char publish1[] = {0x30, 0x13, 0x00, 0x0C, 0x74, 0x65, 0x73, 0x74, 0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31, 0x4f, 0x50, 0x43, 0x41, 0x4f};
+char publish1[] = {0x30, 0x16, 0x00, 0x0C, 0x74, 0x65, 0x73, 0x74, 0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31, 0x43, 0x41, 0x44, 0x41, 0x53, 0x54,0x52, 0x4f};
+char publish2[] = {0x30, 0x16, 0x00, 0x0C, 0x74, 0x65, 0x73, 0x74, 0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31, 0x4c, 0x49, 0x53, 0x54, 0x41, 0x47, 0x45, 0x4d};
+char publish3[] = {0x30, 0x16, 0x00, 0x0C, 0x74, 0x65, 0x73, 0x74, 0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31, 0x43, 0x4f, 0x4e, 0x46, 0x49, 0x41, 0x52, 0x41};
+char publish4[] = {0x30, 0x16, 0x00, 0x0C, 0x74, 0x65, 0x73, 0x74, 0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31, 0x43, 0x52, 0x45, 0x44, 0x49, 0x54, 0x4f, 0x53};
+char publish5[] = {0x30, 0x16, 0x00, 0x0C, 0x74, 0x65, 0x73, 0x74, 0x65, 0x2f, 0x74, 0x65, 0x73, 0x74, 0x65, 0x31, 0x53, 0x49, 0x53, 0x54, 0x45, 0x4d, 0x41, 0x53};
+char comandoSendP[] = "AT+CIPSEND=24";
+
+
+
+char comandoAT0[] = "AT";
+char comandoAT1[] = "AT+CWMODE=1";
+//char comandoAT2[] = "AT+CWJAP=\"LENDA S3\",\"LenDa$3.\"";
+char comandoAT2[] = "AT+CWJAP=\"GT-I9192\",\"[samsung]\"";
+//char comandoAT2[] = "AT+CWJAP=\"WLessLEDS\",\"HelloWorldMP31\"";
+//char comandoAT3[] = "AT+CIPSTART=\"TCP\",\"192.168.1.103\",1883";
+char comandoAT3[] = "AT+CIPSTART=\"TCP\",\"192.168.43.137\",1883";
+//--------------------------------------------------------------------------
+
+
+
+//Initialization of some functions////////
+void writenUart(char vetor[] , int tamanho );
+void readUart();
+void writenUartQuick(char vetor , int tamanho);
+void connectMQTT();
+void publishMQTT(char publish[],int size);
 
 
 char opcao1[9] = {'c' , 'a' , 'd' , 'a' , 's' , 't' , 'r' , 'o' ,'/0'};
@@ -217,27 +263,44 @@ void onMessageSelected(int count){
 	switch(count){
 			case 0:
 				imprime(answer1 , sizeof(answer1));
+				publishMQTT(publish1, 24);
 				break;
 			case 1:
 				imprime(answer2 , sizeof(answer2));
+				publishMQTT(publish2,24);
 				break;
 			case 2:
 				imprime(answer3, sizeof(answer3));
+				publishMQTT(publish3,24);
 				break;
 			case 3:
 				imprime(answer4 , sizeof(answer4));
+				publishMQTT(publish4,24);
 				break;
 			case 4:
 				imprime(answer5 , sizeof(answer5));
+				publishMQTT(publish5,24);
 				break;
 			default:
 				break;
-
 		}
 }
 
 int main()
 { 
+  /*------------------Send commands AT--------------------------*/
+  writenUart(comandoAT0 , strlen(comandoAT0));
+  readUart();
+  usleep(1000000);
+
+  writenUart(comandoAT1 , strlen(comandoAT1));
+  readUart();
+  usleep(1000000);
+
+  writenUart(comandoAT2 , strlen(comandoAT2));
+  readUart();
+  usleep(1000000);
+  /*------------------------------------------------------------*/
 
   int pushbutton = 0;
   int count = 0;
@@ -259,7 +322,15 @@ int main()
 		  if(count == -1){count = 4;}
 		  onMessage(count);
 	  }else if(pushbutton ==  SELECT){
+		  //-----SEND TCP------//
+		  writenUart(comandoAT3 , strlen(comandoAT3));
+		  readUart();
+		  usleep(1000000);
+
+		  //-----SEND MESSAGE------//
+		  connectMQTT();
 		  onMessageSelected(count);
+		  alt_printf("Message sent");
 		  do{
 			  pushbutton = IORD(PUSHBUTTON_BASE,0);
 			  onLed(count);
@@ -268,4 +339,86 @@ int main()
 	  }
   }
 	return 0;
+}
+
+
+void writenUart(char vetor[] , int tamanho ){
+	unsigned long uartStatus = 0;
+	//verifica até que possa ser feita a transmissão de dados.
+	while((uartStatus & 0x00000040) != 0x00000040){
+		uartStatus = IORD_ALTERA_AVALON_UART_STATUS(UART_0_BASE);
+	}
+	int i;
+	for(i = 0 ; i < tamanho ; i++){
+		IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, vetor[i]);
+		usleep(1000);
+	}
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\r');
+	usleep(1000);
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\n');
+}
+
+void readUart(){
+   char check;
+   while(1){
+	   if(IORD_ALTERA_AVALON_UART_STATUS(UART_0_BASE) & 0x80){
+		   check = IORD_ALTERA_AVALON_UART_RXDATA(UART_0_BASE);
+		   alt_printf("%c",check);
+		   if(check == 'K'){
+		   	  break;
+		   }
+	   }
+   }
+}
+
+void writenUartQuick(char vetor , int tamanho){
+	unsigned long uartStatus = 0;
+	//verifica até que possa ser feita a transmissão de dados.
+	while((uartStatus & 0x00000040) != 0x00000040){
+		uartStatus = IORD_ALTERA_AVALON_UART_STATUS(UART_0_BASE);
+	}
+	int i;
+	for(i = 0 ; i < tamanho ; i++){
+		IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, vetor);
+		usleep(1000);
+	}
+}
+
+void connectMQTT(){
+	//----------------SEND CONNECT-----------------------------------//
+	writenUart(comandoSendC , strlen(comandoSendC));
+	usleep(1000000);
+	for(int z = 0 ; z < sizeof(connect); z++){
+		writenUartQuick(connect[z] , 1);
+	}
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\r');
+	usleep(1000);
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\n');
+}
+
+void publishMQTT(char publish[],int size){
+	//----------------SEND PACKAGE MQTT------------------------------//
+	usleep(1000000);
+	writenUart(comandoSendP,strlen(comandoSendP));
+	usleep(1000000);
+	for(int z = 0 ; z < size; z++){
+		alt_printf("%c", publish[z]);
+		writenUartQuick(publish[z] , 1);
+	}
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\r');
+	usleep(1000);
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\n');
+	usleep(1000000);
+
+///////////////////////////////////////////////////////////////////
+	writenUart(comandoD, strlen(comandoD));
+	usleep(1000000);
+	for(int z = 0 ; z < sizeof(disconnect); z++){
+		printf("%c", disconnect[z]);
+		writenUartQuick(disconnect[z],1);
+	}
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\r');
+	usleep(1000);
+	IOWR_ALTERA_AVALON_UART_TXDATA(UART_0_BASE, '\n');
+	usleep(1000000);
 }
