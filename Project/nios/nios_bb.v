@@ -8,7 +8,8 @@ module nios (
 	leds_external_connection_export,
 	pushbutton_external_connection_export,
 	uart_0_external_connection_rxd,
-	uart_0_external_connection_txd);	
+	uart_0_external_connection_txd,
+	arbitrotx_writeresponsevalid_n);	
 
 	input		clk_clk;
 	output	[7:0]	lcd_0_conduit_end_1_readdata;
@@ -19,4 +20,5 @@ module nios (
 	input	[3:0]	pushbutton_external_connection_export;
 	input		uart_0_external_connection_rxd;
 	output		uart_0_external_connection_txd;
+	output		arbitrotx_writeresponsevalid_n;
 endmodule

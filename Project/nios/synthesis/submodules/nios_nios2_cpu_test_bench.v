@@ -1,4 +1,4 @@
-//Legal Notice: (C)2018 Altera Corporation. All rights reserved.  Your
+//Legal Notice: (C)2019 Altera Corporation. All rights reserved.  Your
 //use of Altera Corporation's design tools, logic functions and other
 //software and tools, and its AMPP partner logic functions, and any
 //output files any of the foregoing (including device programming or
@@ -21,6 +21,7 @@
 module nios_nios2_cpu_test_bench (
                                    // inputs:
                                     D_iw,
+                                    D_iw_custom_n,
                                     D_iw_op,
                                     D_iw_opx,
                                     D_valid,
@@ -55,6 +56,7 @@ module nios_nios2_cpu_test_bench (
   output  [ 31: 0] av_ld_data_aligned_filtered;
   output           test_has_ended;
   input   [ 31: 0] D_iw;
+  input   [  7: 0] D_iw_custom_n;
   input   [  5: 0] D_iw_op;
   input   [  5: 0] D_iw_opx;
   input            D_valid;
@@ -87,6 +89,7 @@ wire             D_op_addi;
 wire             D_op_and;
 wire             D_op_andhi;
 wire             D_op_andi;
+wire             D_op_arbitro_0;
 wire             D_op_beq;
 wire             D_op_bge;
 wire             D_op_bgeu;
@@ -371,7 +374,8 @@ wire             test_has_ended;
   assign D_op_intr = (D_iw_opx == 61) & D_is_opx_inst;
   assign D_op_crst = (D_iw_opx == 62) & D_is_opx_inst;
   assign D_op_opx_rsv63 = (D_iw_opx == 63) & D_is_opx_inst;
-  assign D_op_lcd_0 = D_op_custom & 1'b1;
+  assign D_op_arbitro_0 = D_op_custom & ({D_iw_custom_n[0]} == 1'h1);
+  assign D_op_lcd_0 = D_op_custom & ({D_iw_custom_n[0]} == 1'h0);
   assign D_is_opx_inst = D_iw_op == 58;
   assign test_has_ended = 1'b0;
 

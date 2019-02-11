@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "arbitrotx_writeresponsevalid_n",
+					"strict" : false
+				},
+				{
 					"name" : "lcd_0_conduit_end_1_readdata[0]",
 					"strict" : false
 				},

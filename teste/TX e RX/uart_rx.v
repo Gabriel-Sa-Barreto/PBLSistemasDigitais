@@ -1,12 +1,12 @@
 module uart_rx
-   (
-			input 		 CLKS_PER_BIT,
-   		input        i_Clock,
-   		input        i_Rx_Serial,
-   		output       o_Rx_DV,
-   		output [7:0] o_Rx_Byte
-   );
-	
+	//#(parameter CLKS_PER_BIT)
+	(
+	  input        i_Clock,
+	  input        i_Rx_Serial,
+	  output       o_Rx_DV,
+	  output [7:0] o_Rx_Byte
+	);
+	parameter CLKS_PER_BIT = 87;
 	parameter s_IDLE         = 3'b000;
   	parameter s_RX_START_BIT = 3'b001;
   	parameter s_RX_DATA_BITS = 3'b010;

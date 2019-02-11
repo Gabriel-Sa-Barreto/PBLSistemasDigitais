@@ -8,7 +8,8 @@
 			leds_external_connection_export          : out std_logic_vector(3 downto 0);                    -- export
 			pushbutton_external_connection_export    : in  std_logic_vector(3 downto 0) := (others => 'X'); -- export
 			uart_0_external_connection_rxd           : in  std_logic                    := 'X';             -- rxd
-			uart_0_external_connection_txd           : out std_logic                                        -- txd
+			uart_0_external_connection_txd           : out std_logic;                                       -- txd
+			arbitrotx_writeresponsevalid_n           : out std_logic                                        -- writeresponsevalid_n
 		);
 	end component nios;
 
@@ -22,6 +23,7 @@
 			leds_external_connection_export          => CONNECTED_TO_leds_external_connection_export,          --       leds_external_connection.export
 			pushbutton_external_connection_export    => CONNECTED_TO_pushbutton_external_connection_export,    -- pushbutton_external_connection.export
 			uart_0_external_connection_rxd           => CONNECTED_TO_uart_0_external_connection_rxd,           --     uart_0_external_connection.rxd
-			uart_0_external_connection_txd           => CONNECTED_TO_uart_0_external_connection_txd            --                               .txd
+			uart_0_external_connection_txd           => CONNECTED_TO_uart_0_external_connection_txd,           --                               .txd
+			arbitrotx_writeresponsevalid_n           => CONNECTED_TO_arbitrotx_writeresponsevalid_n            --                      arbitrotx.writeresponsevalid_n
 		);
 

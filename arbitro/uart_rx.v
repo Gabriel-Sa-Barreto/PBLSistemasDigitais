@@ -1,12 +1,12 @@
 module uart_rx
-   #(parameter CLKS_PER_BIT)
-   (
-   		input        i_Clock,
-   		input        i_Rx_Serial,
-   		output       o_Rx_DV,
-   		output [7:0] o_Rx_Byte
-   );
-	
+	//#(parameter CLKS_PER_BIT)
+	(
+	  input        i_Clock,
+	  input        i_Rx_Serial,
+	  output       o_Rx_DV,
+	  output [7:0] o_Rx_Byte
+	);
+	parameter CLKS_PER_BIT = 87;
 	parameter s_IDLE         = 3'b000;
   	parameter s_RX_START_BIT = 3'b001;
   	parameter s_RX_DATA_BITS = 3'b010;
@@ -67,7 +67,7 @@ module uart_rx
 				                r_Clock_Count <= r_Clock_Count + 1;
 				                r_SM_Main     <= s_RX_DATA_BITS;
 				              end
-				            else
+				         else
 				              begin
 				                r_Clock_Count          <= 0;
 				                r_Rx_Byte[r_Bit_Index] <= r_Rx_Data;
@@ -83,7 +83,8 @@ module uart_rx
 				                    r_Bit_Index <= 0;
 				                    r_SM_Main   <= s_RX_STOP_BIT;
 				                  end
-				            end
+									end
+						end			
 				s_RX_STOP_BIT :
 				        begin
 				            // Wait CLKS_PER_BIT-1 clock cycles for Stop bit to finish
@@ -106,9 +107,10 @@ module uart_rx
 				        end
          
          
-		        default :
+		       default :
+					begin
 		          r_SM_Main <= s_IDLE;
-         
+					end
       		endcase
     end   
    

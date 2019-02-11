@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2' in SOPC Builder design 'nios'
  * SOPC Builder design path: ../../nios.sopcinfo
  *
- * Generated: Sun Nov 25 17:11:33 BRST 2018
+ * Generated: Mon Feb 11 11:17:49 BRST 2019
  */
 
 /*
@@ -133,6 +133,8 @@
  *
  */
 
+#define ALT_CI_ARBITRO_0(A,B) __builtin_custom_inii(ALT_CI_ARBITRO_0_N,(A),(B))
+#define ALT_CI_ARBITRO_0_N 0x1
 #define ALT_CI_LCD_0(A,B) __builtin_custom_inii(ALT_CI_LCD_0_N,(A),(B))
 #define ALT_CI_LCD_0_N 0x0
 
@@ -148,6 +150,7 @@
 #define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_AVALON_UART
 #define __ALTERA_NIOS2_GEN2
+#define __ARBITRO
 #define __LCD
 
 
@@ -311,7 +314,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1543171191
+#define SYSID_QSYS_0_TIMESTAMP 1549889630
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

@@ -72,8 +72,8 @@ set_location_assignment PIN_90 -to pushbutton_external_connection_export[1]
 set_location_assignment PIN_91 -to pushbutton_external_connection_export[0]
 set_location_assignment PIN_115 -to uart_0_external_connection_rxd
 set_location_assignment PIN_114 -to uart_0_external_connection_txd
-set_global_assignment -name VERILOG_FILE "../arbitro/module uart_tx.v"
-set_global_assignment -name VERILOG_FILE "../arbitro/module uart_rx.v"
+set_global_assignment -name VERILOG_FILE ../arbitro/uart_tx.v
+set_global_assignment -name VERILOG_FILE ../arbitro/uart_rx.v
 set_global_assignment -name VERILOG_FILE ../arbitro/arbitro.v
 set_global_assignment -name QIP_FILE nios/synthesis/nios.qip
 set_global_assignment -name VERILOG_FILE LcdCustomInstruction.v

@@ -25,6 +25,14 @@
          type = "int";
       }
    }
+   element arbitro_0
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
    element jtag
    {
       datum _sortIndex
@@ -70,6 +78,14 @@
       datum baseAddress
       {
          value = "32768";
+         type = "String";
+      }
+   }
+   element nios
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
          type = "String";
       }
    }
@@ -294,6 +310,7 @@
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
+ <interface name="arbitrotx" internal="arbitro_0.tx" type="conduit" dir="end" />
  <interface name="clk" internal="Clk.clk_in" type="clock" dir="end" />
  <interface name="lcd_0_conduit_end" internal="LCD_0.conduit_end" />
  <interface
@@ -338,6 +355,17 @@
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
  <module name="LCD_0" kind="LCD" version="1.0" enabled="1" />
+ <module name="arbitro_0" kind="arbitro" version="1.0" enabled="1">
+  <parameter name="ANSWER_TIME" value="2" />
+  <parameter name="CHECKSUM" value="4" />
+  <parameter name="IDLE" value="0" />
+  <parameter name="REQUEST" value="1" />
+  <parameter name="SEND_BACK" value="5" />
+  <parameter name="TIMEOUT" value="3" />
+  <parameter name="TRYALARM" value="6" />
+  <parameter name="c_CLKS_PER_BIT" value="5207" />
+  <parameter name="c_CLOCK_PERIOD_NS" value="100" />
+ </module>
  <module name="jtag" kind="altera_avalon_jtag_uart" version="18.1" enabled="1">
   <parameter name="allowMultipleConnections" value="false" />
   <parameter name="avalonSpec" value="2.0" />
@@ -412,7 +440,7 @@
   <parameter name="cpuArchRev" value="1" />
   <parameter name="cpuID" value="0" />
   <parameter name="cpuReset" value="false" />
-  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="lcd_0" baseAddress="0" addressSpan="1" clockCycleType="MULTICYCLE" /></info>]]></parameter>
+  <parameter name="customInstSlavesSystemInfo"><![CDATA[<info><slave name="lcd_0" baseAddress="0" addressSpan="1" clockCycleType="MULTICYCLE" /><slave name="arbitro_0" baseAddress="1" addressSpan="1" clockCycleType="VARIABLE" /></info>]]></parameter>
   <parameter name="customInstSlavesSystemInfo_nios_a" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_b" value="&lt;info/&gt;" />
   <parameter name="customInstSlavesSystemInfo_nios_c" value="&lt;info/&gt;" />
@@ -712,6 +740,15 @@
  </connection>
  <connection kind="interrupt" version="18.1" start="nios2.irq" end="uart_0.irq">
   <parameter name="irqNumber" value="1" />
+ </connection>
+ <connection
+   kind="nios_custom_instruction"
+   version="18.1"
+   start="nios2.custom_instruction_master"
+   end="arbitro_0.nios_custom_instruction_slave">
+  <parameter name="CIName" value="arbitro_0" />
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="1" />
  </connection>
  <connection
    kind="nios_custom_instruction"

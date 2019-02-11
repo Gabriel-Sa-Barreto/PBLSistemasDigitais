@@ -1,5 +1,6 @@
 	component nios is
 		port (
+			arbitrotx_writeresponsevalid_n           : out std_logic;                                       -- writeresponsevalid_n
 			clk_clk                                  : in  std_logic                    := 'X';             -- clk
 			lcd_0_conduit_end_1_readdata             : out std_logic_vector(7 downto 0);                    -- readdata
 			lcd_0_conduit_end_2_writeresponsevalid_n : out std_logic;                                       -- writeresponsevalid_n

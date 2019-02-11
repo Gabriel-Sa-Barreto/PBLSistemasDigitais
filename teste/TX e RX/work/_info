@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX
+vuart_rx
+Z1 !s110 1549908171
+!i10b 1
+!s100 ;58QROR7YYRJa3YF3>?Be0
+ISn57h7iN15D7iaGdI4`SD1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1549907996
+8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.v
+FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1549908171.000000
+!s107 C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vuart_tb
+R1
+!i10b 1
+!s100 ^Kgeo`C]z;8?83e3>XSdh0
+I]2MeK`VWgc>18]?KBJLZV1
+R2
+R0
+w1549908159
+8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v
+FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 uart_rx.v|uart_tx.v|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v|
+!i113 1
+R5
+R6
+vuart_tx
+R1
+!i10b 1
+!s100 _kEbl[2fii?eV5c>bhMGJ0
+IMZ9nLSJ^>4C6dl00KQGb80
+R2
+R0
+w1549907994
+8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v
+FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v|
+!i113 1
+R5
+R6

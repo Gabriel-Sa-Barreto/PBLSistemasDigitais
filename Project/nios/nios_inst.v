@@ -7,6 +7,7 @@
 		.leds_external_connection_export          (<connected-to-leds_external_connection_export>),          //       leds_external_connection.export
 		.pushbutton_external_connection_export    (<connected-to-pushbutton_external_connection_export>),    // pushbutton_external_connection.export
 		.uart_0_external_connection_rxd           (<connected-to-uart_0_external_connection_rxd>),           //     uart_0_external_connection.rxd
-		.uart_0_external_connection_txd           (<connected-to-uart_0_external_connection_txd>)            //                               .txd
+		.uart_0_external_connection_txd           (<connected-to-uart_0_external_connection_txd>),           //                               .txd
+		.arbitrotx_writeresponsevalid_n           (<connected-to-arbitrotx_writeresponsevalid_n>)            //                      arbitrotx.writeresponsevalid_n
 	);
 
