@@ -5,13 +5,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	uart_tx
 
-} {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v} {1 {vlog -work work -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module uart_tx
-
-Top level modules:
-	uart_tx
-
 } {} {}} C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v {1 {vlog -work work -stats=none C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module arbitro
@@ -26,16 +19,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	uart_rx
 
-} {} {}} C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v {1 {vlog -work work -stats=none C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v
+} {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v} {1 {vlog -work work -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_tx.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module uart_tx
--- Compiling module uart_rx
--- Compiling module arbitro
--- Compiling module digital_clock
--- Compiling module arbitro_tb
 
 Top level modules:
-	arbitro_tb
+	uart_tx
+
+} {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.sv} {1 {vlog -work work -sv -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uart_rx
+
+Top level modules:
+	uart_rx
 
 } {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.sv} {1 {vlog -work work -sv -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.sv}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -46,13 +42,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	uart_tb
 
-} {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.sv} {1 {vlog -work work -sv -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.sv}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module uart_rx
-
-Top level modules:
-	uart_rx
-
 } {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v} {1 {vlog -work work -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module uart_tx
@@ -62,12 +51,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	uart_tb
 
-} {} {}} C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v {1 {vlog -work work -stats=none C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v
+} {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/module uart_tx.v} {1 {vlog -work work -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/module uart_tx.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module digital_clock
+-- Compiling module uart_tx
 
 Top level modules:
-	digital_clock
+	uart_tx
 
 } {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.v} {1 {vlog -work work -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/uart_rx.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -76,11 +65,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	uart_rx
 
-} {} {}} {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/module uart_tx.v} {1 {vlog -work work -stats=none {C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/module uart_tx.v}
+} {} {}} C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v {1 {vlog -work work -stats=none C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module uart_tx
+-- Compiling module digital_clock
 
 Top level modules:
-	uart_tx
+	digital_clock
 
 } {} {}}

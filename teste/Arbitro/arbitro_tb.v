@@ -11,7 +11,7 @@ module arbitro_tb ();
 //entradas do árbitro
 reg clock;
 reg [31:0] dataA;
-reg [7:0]rx_Serial;
+reg rx_Serial;
 reg [7:0]tx_Serial; 
 //saídas
 wire tx;
@@ -30,7 +30,7 @@ parameter c_BIT_PERIOD      = 8600;
     begin
       //enviar requisição
       dataA[7:0] = i_Data;
-      //$display("DataA = %b", dataA);
+      $display("DataA = %b", dataA);
       //Recebe requisição
       for (i=0; i<8; i=i+1)
         begin
@@ -38,7 +38,7 @@ parameter c_BIT_PERIOD      = 8600;
           if(txDV)
           	begin
           		tx_Serial[i] = tx;
-          		//#(c_BIT_PERIOD);
+          		#(c_BIT_PERIOD);
           	end
         end
        //testa o valor do TX transmitido
@@ -68,7 +68,7 @@ end
 arbitro arbitro_inst
 (
 	.clock(clock) ,	                // input  clock_sig
-	.reset(reset_sig) ,	            // input  reset_sig
+	.reset() ,	            // input  reset_sig
 	.clock_en() ,	                // input  clock_en_sig
 	.rx_Serial(rx_Serial),
 	.dataA(dataA) ,	                // input [31:0] dataA_sig

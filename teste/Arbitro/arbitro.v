@@ -21,11 +21,11 @@ parameter TRYALARM       = 4'b110;
 //parameter ALARM        = 4'b0111;
 //parameter CLEAN_BUFFER = 4'b1000;
 
-parameter c_CLOCK_PERIOD_NS = 10;
+parameter c_CLOCK_PERIOD_NS = 100;
 reg       r_Tx_DV = 0;              //informa se pode transmitir algo via TX 
 
 wire w_Tx_Done;                     //informa que a transmissão foi concluída
-wire [15:0] w_Rx_Byte;
+wire [7:0] w_Rx_Byte;
 wire rx_DV;
 wire doneTime;                      //informa se os 10 segundos do tempo de resposta foi finalizado
 
@@ -63,13 +63,14 @@ always @ (posedge state, posedge dataA)
 		case(state)
 				IDLE:
 					begin
+						$display("IDLE");
 						valueSent = 0;
 						/*Se dataA tiver algum valor, então muda para o estado Timer para envio de uma requisição*/
 						if(dataA)
 							begin
-								requestSensor  <= dataA[7:0]; //sensor requisitado
-										 r_Tx_DV <= 1'b1;
-								next_state     <= REQUEST;
+								requestSensor[7:0]  <= dataA[7:0]; //sensor requisitado
+										  r_Tx_DV   <= 1'b1;
+								       next_state   <= REQUEST;
 							end
 						else
 							begin
@@ -80,16 +81,19 @@ always @ (posedge state, posedge dataA)
 				REQUEST:
 					begin
 						//espera a finalização pelo w_Tx_Done e após isso dá um time de resposta
+						$display("Request");
 						$display("Sensor: %b", requestSensor);
 						if(w_Tx_Done)
 							begin
-								requestSensor <= 0;
+								$display("End broadcast");
+								requestSensor   <= 0;
 										r_Tx_DV <= 1'b0;
 										 active <= 1'b1; //ativa a contagem
-								next_state    <= ANSWER_TIME;
+								next_state      <= ANSWER_TIME;
 							end
 						else
 							begin
+								$display("Repeat: %b", w_Tx_Done);
 								next_state    <= REQUEST;
 							end	
 					end			
