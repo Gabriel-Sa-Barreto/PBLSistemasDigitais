@@ -1,7 +1,7 @@
 // This testbench will exercise both the UART Tx and Rx.
 // It sends out byte 0xAB over the transmitter
 // It then exercises the receive by receiving byte 0x3F
-`timescale 1ns/10ps
+`timescale 1ns/1ns
  
 `include "uart_tx.v"
 `include "uart_rx.v"

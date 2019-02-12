@@ -1,26 +1,27 @@
+`timescale 1ns/1ns
 module arbitro (
 	input clock,
 	input reset,
 	input clock_en,
+	input  wire rx_Serial,
 	input  wire [31:0] dataA,
 	output wire          tx,
+	output wire        tx_DV,
 	output done,
 	output [31:0]result
 );
 
-parameter IDLE         = 3'b000;
-parameter REQUEST      = 3'b001;
-parameter ANSWER_TIME  = 3'b010;
-parameter TIMEOUT      = 3'b011;
-parameter CHECKSUM     = 3'b100;
-parameter SEND_BACK    = 3'b101;
-parameter TRYALARM     = 4'b110;
+parameter IDLE           = 3'b000;
+parameter REQUEST        = 3'b001;
+parameter ANSWER_TIME    = 3'b010;
+parameter TIMEOUT        = 3'b011;
+parameter CHECKSUM       = 3'b100;
+parameter SEND_BACK      = 3'b101;
+parameter TRYALARM       = 4'b110;
 //parameter ALARM        = 4'b0111;
 //parameter CLEAN_BUFFER = 4'b1000;
 
-//50000000 / 9600 = 87 Clocks Per Bit.
-parameter c_CLOCK_PERIOD_NS = 100;
-//parameter c_CLKS_PER_BIT    = 5207; //parâmetro do tx para o clock por bit
+parameter c_CLOCK_PERIOD_NS = 10;
 reg       r_Tx_DV = 0;              //informa se pode transmitir algo via TX 
 
 wire w_Tx_Done;                     //informa que a transmissão foi concluída
@@ -29,7 +30,6 @@ wire rx_DV;
 wire doneTime;                      //informa se os 10 segundos do tempo de resposta foi finalizado
 
 reg active;                         //ativa a contagem de 10 segundos
-reg r_Rx_Serial = 1;
 reg r_Clock = 0;
 reg [2:0] state;
 reg [2:0] next_state      = 0;
@@ -42,12 +42,15 @@ reg valueSent;                     //diz que o valor em RX já foi recebido
 
 assign result[7:0] = value;
 assign        done = valueSent;
-
+assign tx_DV       = r_Tx_DV;
 always
     #(c_CLOCK_PERIOD_NS/2) r_Clock <= !r_Clock;
 
+initial begin
+	state = IDLE;
+end
 
-always @ (clock)
+always @ (posedge clock)
 	begin
 		if(reset)
 			state <= IDLE;
@@ -55,7 +58,7 @@ always @ (clock)
 			state <= next_state;
 	end
 
-always @ (state,dataA)
+always @ (posedge state, posedge dataA)
 	begin
 		case(state)
 				IDLE:
@@ -74,9 +77,10 @@ always @ (state,dataA)
 							end
 					end
 					
-				REQUEST: /*Espera fim da requisição*/
+				REQUEST:
 					begin
 						//espera a finalização pelo w_Tx_Done e após isso dá um time de resposta
+						$display("Sensor: %b", requestSensor);
 						if(w_Tx_Done)
 							begin
 								requestSensor <= 0;
@@ -168,7 +172,7 @@ uart_tx uart_tx_inst
 uart_rx uart_rx_inst
 (
 	.i_Clock(r_Clock) ,						// input  i_Clock_sig
-	.i_Rx_Serial(r_Rx_Serial) ,			// input  i_Rx_Serial_sig
+	.i_Rx_Serial(rx_Serial) ,			// input  i_Rx_Serial_sig
 	.o_Rx_DV(rx_DV) ,							// output  o_Rx_DV_sig
 	.o_Rx_Byte(w_Rx_Byte) 					// output [7:0] o_Rx_Byte_sig
 );
