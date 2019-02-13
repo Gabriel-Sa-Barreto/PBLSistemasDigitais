@@ -75,6 +75,7 @@ module uart_rx
 				                // Check if we have received all bits
 				                if (r_Bit_Index < 7)
 				                  begin
+				                  	$display("Dado recebido %b-------------------------------------------------------------------------" , r_Rx_Byte[r_Bit_Index]);
 				                    r_Bit_Index <= r_Bit_Index + 1;
 				                    r_SM_Main   <= s_RX_DATA_BITS;
 				                  end

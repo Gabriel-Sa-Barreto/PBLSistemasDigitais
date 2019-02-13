@@ -17,11 +17,11 @@ parameter ANSWER_TIME    = 3'b010;
 parameter TIMEOUT        = 3'b011;
 parameter CHECKSUM       = 3'b100;
 parameter SEND_BACK      = 3'b101;
-parameter TRYALARM       = 4'b110;
+parameter TRYALARM       = 3'b110;
 //parameter ALARM        = 4'b0111;
 //parameter CLEAN_BUFFER = 4'b1000;
 
-parameter c_CLOCK_PERIOD_NS = 100;
+parameter c_CLOCK_PERIOD_NS = 10;
 reg       r_Tx_DV = 0;              //informa se pode transmitir algo via TX 
 
 wire w_Tx_Done;                     //informa que a transmissão foi concluída
@@ -43,8 +43,9 @@ reg valueSent;                     //diz que o valor em RX já foi recebido
 assign result[7:0] = value;
 assign        done = valueSent;
 assign tx_DV       = r_Tx_DV;
+
 always
-    #(c_CLOCK_PERIOD_NS/2) r_Clock <= !r_Clock;
+    #(c_CLOCK_PERIOD_NS/2) r_Clock <= ~r_Clock;
 
 initial begin
 	state = IDLE;

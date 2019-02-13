@@ -9,34 +9,34 @@ z2
 cModel Technology
 Z0 dC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX
 varbitro
-Z1 !s110 1549997724
+Z1 !s110 1550082289
 !i10b 1
-!s100 A3Y0D>I=E?BN_NlheC9C90
-IJ@8e36e^JF=31ETclC]DD2
+!s100 ?:RNGnZ:DaBe0aR]NETM;1
+IDbb1lcgQ9R>@0gOc>:]6a0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1549997573
-8C:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\arbitro.v
-FC:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\arbitro.v
+w1550065699
+8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v
+FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v
 L0 2
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1549997724.000000
-Z5 !s107 C:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\digital_clock.v|C:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\arbitro.v|uart_rx.v|uart_tx.v|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v|
-Z6 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v|
+Z4 !s108 1550082289.000000
+!s107 C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v|
 !i113 1
-Z7 o-work work
-Z8 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 varbitro_tb
 R1
 !i10b 1
-!s100 0^k@8[RWFQ?94S8R4eCZ61
-IiG?NHg>3UZZH?chW7J9Wc0
+!s100 K:hKj`dm858hMQkZiBY2k3
+I=TVh>7_Vj<cQSLB4ML?Qk3
 R2
 R0
-w1549997718
+w1550082146
 8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v
 FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v
 L0 9
@@ -45,40 +45,62 @@ r1
 !s85 0
 31
 R4
+Z7 !s107 C:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\digital_clock.v|C:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\arbitro.v|uart_rx.v|uart_tx.v|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v|
+!i113 1
 R5
 R6
-!i113 1
-R7
-R8
 vdigital_clock
 R1
 !i10b 1
-!s100 ?_Ub_9EH`b^S6oAL?`20]0
-I>aUSOLHL;MgbBdYWI3fLP3
+!s100 dg=HQ4DJClMmQKEkT=E290
+IJL0@fCO5dcPQZPo=4]l^@3
 R2
 R0
 w1549647282
-8C:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\digital_clock.v
-FC:\Users\lsjsa\Desktop\Trabalho\SD\PBLSistemasDigitais\teste\Arbitro\digital_clock.v
+8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v
+FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v
 L0 3
 R3
 r1
 !s85 0
 31
 R4
+!s107 C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v|
+!i113 1
 R5
 R6
+vnewArbitro
+R1
+!i10b 1
+!s100 V57EOTmMe:b2@8J4V:o=J3
+ImEiz7?BlJ8S`[12Fe7WGT0
+R2
+R0
+w1550082272
+8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/newArbitro.v
+FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/newArbitro.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/newArbitro.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/newArbitro.v|
 !i113 1
-R7
-R8
+R5
+R6
+nnew@arbitro
 vuart_rx
 R1
 !i10b 1
-!s100 3o20DU:b>VYY5I:]oRoS02
-IaA>Jinz:J<W_G8ISz6gn=0
+!s100 >jhkkd@QGANeBn>@aH0Xb2
+I1Gk[5OE_2lEKhZ:g>R`H^3
 R2
 R0
-w1549907996
+w1550082221
 8uart_rx.v
 Fuart_rx.v
 L0 1
@@ -87,13 +109,13 @@ r1
 !s85 0
 31
 R4
-R5
-R6
-!i113 1
 R7
 R8
+!i113 1
+R5
+R6
 vuart_tb
-!s110 1549997670
+R1
 !i10b 1
 !s100 =hWSJU71HS9RbajI>B9Hl2
 I9fKm4nk0l=>l80A`iQ_UQ2
@@ -107,20 +129,20 @@ R3
 r1
 !s85 0
 31
-!s108 1549997669.000000
+R4
 !s107 uart_rx.v|uart_tx.v|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v|
 !i113 1
-R7
-R8
+R5
+R6
 vuart_tx
 R1
 !i10b 1
-!s100 5JZaYGzc3FJbKRaCF<EY^1
-IzS;?AoHJlZWkS68=zHS=^0
+!s100 jbSzLRD]HJB>B[;LDA`FY0
+IYDiJg3[M^4MmeP]UEzSi[2
 R2
 R0
-w1549982896
+w1550082139
 8uart_tx.v
 Fuart_tx.v
 L0 1
@@ -129,8 +151,8 @@ r1
 !s85 0
 31
 R4
-R5
-R6
-!i113 1
 R7
 R8
+!i113 1
+R5
+R6
