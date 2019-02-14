@@ -74,7 +74,6 @@ module uart_tx
 	                // Check if we have sent out all bits
 	                if (r_Bit_Index < 7)
 	                  begin
-	                  	$display("Dado enviado %b--------------------------------------------------------" , r_Tx_Data[r_Bit_Index]);
 	                    r_Bit_Index <= r_Bit_Index + 1;
 	                    r_SM_Main   <= s_TX_DATA_BITS;
 	                  end
@@ -107,7 +106,6 @@ module uart_tx
 	        // Stay here 1 clock
 	        s_CLEANUP :
 	          begin
-	          	$display("CLEAN ///////////////////////////////////");
 	            r_Tx_Done <= 1'b1;
 	            r_SM_Main <= s_IDLE;
 	          end

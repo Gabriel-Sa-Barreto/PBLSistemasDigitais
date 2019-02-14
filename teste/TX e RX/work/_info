@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX
 varbitro
-Z1 !s110 1550082289
+Z1 !s110 1550155624
 !i10b 1
 !s100 ?:RNGnZ:DaBe0aR]NETM;1
 IDbb1lcgQ9R>@0gOc>:]6a0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1550082289.000000
+Z4 !s108 1550155624.000000
 !s107 C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro.v|
 !i113 1
@@ -32,11 +32,11 @@ Z6 tCvgOpt 0
 varbitro_tb
 R1
 !i10b 1
-!s100 K:hKj`dm858hMQkZiBY2k3
-I=TVh>7_Vj<cQSLB4ML?Qk3
+!s100 2:?NXC4U<E8J]m<f@kU@91
+IUa1<XlE[6LJ8G_64:H9hX0
 R2
 R0
-w1550082146
+w1550155546
 8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v
 FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/arbitro_tb.v
 L0 9
@@ -53,11 +53,11 @@ R6
 vdigital_clock
 R1
 !i10b 1
-!s100 dg=HQ4DJClMmQKEkT=E290
-IJL0@fCO5dcPQZPo=4]l^@3
+!s100 Y9Db@^XG>kUMl^Q<^4Z[n3
+IL9AWZXD9L6]=B0hUYm;_23
 R2
 R0
-w1549647282
+w1550152733
 8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v
 FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/Arbitro/digital_clock.v
 L0 3
@@ -74,11 +74,11 @@ R6
 vnewArbitro
 R1
 !i10b 1
-!s100 V57EOTmMe:b2@8J4V:o=J3
-ImEiz7?BlJ8S`[12Fe7WGT0
+!s100 ;SQL<_MTbPmKCYEdOKKG72
+ICVVFz[AObR]`^_YiY0z3O2
 R2
 R0
-w1550082272
+w1550155614
 8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/newArbitro.v
 FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/newArbitro.v
 L0 1
@@ -96,11 +96,11 @@ nnew@arbitro
 vuart_rx
 R1
 !i10b 1
-!s100 >jhkkd@QGANeBn>@aH0Xb2
-I1Gk[5OE_2lEKhZ:g>R`H^3
+!s100 gZ_^?14o50PLV=fKmg<Ub3
+I61ILk795NXQS2j?A]Vfag2
 R2
 R0
-w1550082221
+w1550145932
 8uart_rx.v
 Fuart_rx.v
 L0 1
@@ -117,11 +117,11 @@ R6
 vuart_tb
 R1
 !i10b 1
-!s100 =hWSJU71HS9RbajI>B9Hl2
-I9fKm4nk0l=>l80A`iQ_UQ2
+!s100 =XK54maKCieo=OHYI6M[J1
+I`bMHc8JfD99geKc7?b_>22
 R2
 R0
-w1549991830
+w1550103723
 8C:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v
 FC:/Users/lsjsa/Desktop/Trabalho/SD/PBLSistemasDigitais/teste/TX e RX/teste_TX_RX.v
 L0 9
@@ -138,11 +138,11 @@ R6
 vuart_tx
 R1
 !i10b 1
-!s100 jbSzLRD]HJB>B[;LDA`FY0
-IYDiJg3[M^4MmeP]UEzSi[2
+!s100 5JZaYGzc3FJbKRaCF<EY^1
+IzS;?AoHJlZWkS68=zHS=^0
 R2
 R0
-w1550082139
+w1550148149
 8uart_tx.v
 Fuart_tx.v
 L0 1

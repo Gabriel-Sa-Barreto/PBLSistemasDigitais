@@ -8,7 +8,7 @@ module uart_tx
    output reg  o_Tx_Serial,
    output      o_Tx_Done
    );
-  parameter CLKS_PER_BIT = 87;
+  parameter CLKS_PER_BIT   = 87;
   parameter s_IDLE         = 3'b000;
   parameter s_TX_START_BIT = 3'b001;
   parameter s_TX_DATA_BITS = 3'b010;

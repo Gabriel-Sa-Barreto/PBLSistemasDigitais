@@ -82,11 +82,11 @@ module uart_tb ();
        
       // Send a command to the UART (exercise Rx)
       @(posedge r_Clock);
-      UART_WRITE_BYTE(8'h3B);
+      UART_WRITE_BYTE(8'h3D);
       @(posedge r_Clock);
              
       // Check that the correct command was received
-      if (w_Rx_Byte == 8'h3B)
+      if (w_Rx_Byte == 8'h3D)
         begin
           $display("Test Passed - Correct Byte Received");
           $display(w_Rx_Byte);

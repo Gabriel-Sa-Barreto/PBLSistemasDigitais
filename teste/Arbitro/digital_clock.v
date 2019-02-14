@@ -38,6 +38,8 @@ always @ (posedge clk)
 						if (countsec == 8'b00001010) //10 segundos
 							begin
 								countsec <= 8'b0;
+									$display("segundos");
+									$display("//////////////////////////");
 									 fim  <= 1'b1;
 							end
 						else  

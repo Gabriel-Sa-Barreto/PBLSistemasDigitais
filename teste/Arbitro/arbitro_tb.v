@@ -8,71 +8,50 @@
  
 module arbitro_tb ();
 
-/*entradas do árbitro
-reg clock;
-reg [31:0] dataA;
-reg rx_Serial;
-reg [7:0]tx_Serial; 
-
-//saídas
-wire tx;
-wire done;
-wire [31:0] result;
-wire        tx_DV;
-
-reg txDV;
-
-initial begin 
-    clock = 0; 
-    dataA <= 32'd1;
-  end
-
-always # 10 clock = ~clock;
-
-
-always @ (posedge clock)
-begin
-	txDV <= tx_DV;
-  $display("txDV = %b " , txDV);
-  $display("tx   = %b " , tx);
-end
-
-arbitro arbitro_inst
-(
-	.clock(clock) ,	          // input  clock_sig
-	.reset() ,	              // input  reset_sig
-	.clock_en() ,	            // input  clock_en_sig
-	.rx_Serial(rx_Serial),
-	.dataA(dataA) ,	          // input [31:0] dataA_sig
-	.tx(tx) ,	                // output  tx_sig
-	.tx_DV(tx_DV),
-	.done(done) ,	            // output  done_sig
-	.result(result) 	        // output [31:0] result_sig
-);*/
-
 reg clock;
 reg reset;
 wire tx;
-reg in;
-always # 10 clock = ~clock;
+wire tx_Done;
+reg [31:0]in;
+
 initial begin
-	reset = 1;
-	in = 8'd1;
-	#(10);
-	reset = 0;
+	SEND_TX();
 end
 
-always @ (posedge clock)
+task SEND_TX;
 begin
-	//$display("tx: %b", tx);
+	$display("Teste 1=============");
+		reset = 1;
+		in = 32'd1;
+		$display("in: %d", in);
+		#(10);
+		reset = 0;
+		@(posedge tx_Done);
+	$display("=============");
+	$display("Teste 2=============");
+		reset = 1;
+		#(10);
+		in = 32'd2;
+		$display("in: %d", in);
+		reset = 0;
+		@(posedge tx_Done);
+	$display("=============");
+	$display("Teste 3=============");
+		reset = 1;
+		#(10);
+		in = 32'dx;
+		$display("in: %d", in);
+	$display("=============");
 end
+endtask
 
 newArbitro newArbitro_inst_tx
 (
   .clk(clock),
   .in(in),
   .reset(reset),
-  .tx(tx)
+  .tx(tx),
+  .tx_Done(tx_Done)
 );
 
 endmodule
